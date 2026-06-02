@@ -1,0 +1,17 @@
+insitu_salt_profile_argo.nc
+insitu_salt_profile_glider.nc
+insitu_salt_profile_pirata.nc
+insitu_salt_profile_rama.nc
+insitu_salt_profile_taotriton.nc
+insitu_salt_profile_tesac.nc
+insitu_salt_surface_trkob.nc
+insitu_temp_profile_argo.nc
+insitu_temp_profile_bathy.nc
+insitu_temp_profile_glider.nc
+insitu_temp_profile_pirata.nc
+insitu_temp_profile_rama.nc
+insitu_temp_profile_taotriton.nc
+insitu_temp_profile_tesac.nc
+insitu_temp_surface_drifter.nc
+insitu_temp_surface_ndbc.nc
+insitu_temp_surface_trkob.nc

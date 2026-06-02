@@ -1,0 +1,146 @@
+Directory: /lfs/h2/emc/da/noscrub/Hyundeok.Choi/obsForge_realtime/COMROOT/realtime/gdas.20260602/12/atmos
+FILE NAME                                     | GENERATED FILE                                | N_OBS
+------------------------------------------------------------------------------------------------------------
+gdas.t12z.gnssro_cosmic2.nc                   | gdas.t12z.gnssro_cosmic2.nc                   | 471600
+gdas.t12z.gnssro_geooptics.nc                 | gdas.t12z.gnssro_geooptics.nc                 | 0
+gdas.t12z.gnssro_grace.nc                     | gdas.t12z.gnssro_grace.nc                     | 22800
+gdas.t12z.gnssro_kompsat5.nc                  | gdas.t12z.gnssro_kompsat5.nc                  | 0
+gdas.t12z.gnssro_metop.nc                     | gdas.t12z.gnssro_metop.nc                     | 84300
+gdas.t12z.gnssro_paz.nc                       | gdas.t12z.gnssro_paz.nc                       | 15000
+gdas.t12z.gnssro_planetiq.nc                  | gdas.t12z.gnssro_planetiq.nc                  | 410100
+gdas.t12z.gnssro_sentinel6.nc                 | gdas.t12z.gnssro_sentinel6.nc                 | 62100
+gdas.t12z.gnssro_spire.nc                     | gdas.t12z.gnssro_spire.nc                     | 316800
+gdas.t12z.gnssro_tandemx.nc                   | gdas.t12z.gnssro_tandemx.nc                   | 3900
+gdas.t12z.gnssro_terrasarx.nc                 | gdas.t12z.gnssro_terrasarx.nc                 | 13800
+gdas.t12z.prepbufr_adpsfc.nc                  | gdas.t12z.prepbufr_adpsfc.nc                  | 171590
+gdas.t12z.prepbufr_adpupa.nc                  | gdas.t12z.prepbufr_adpupa.nc                  | 277440
+gdas.t12z.prepbufr_aircraft.nc                | gdas.t12z.prepbufr_aircraft.nc                | 5017197
+gdas.t12z.prepbufr_aircraft_profiles.nc       |                                               | 0
+gdas.t12z.prepbufr_sfcshp.nc                  | gdas.t12z.prepbufr_sfcshp.nc                  | 60680
+gdas.t12z.radiance_amsua_metop-a.nc           | gdas.t12z.radiance_amsua_metop-a.nc           | 0
+gdas.t12z.radiance_amsua_metop-b.nc           | gdas.t12z.radiance_amsua_metop-b.nc           | 141134
+gdas.t12z.radiance_amsua_metop-c.nc           | gdas.t12z.radiance_amsua_metop-c.nc           | 131768
+gdas.t12z.radiance_amsua_n18.nc               | gdas.t12z.radiance_amsua_n18.nc               | 0
+gdas.t12z.radiance_amsua_n19.nc               | gdas.t12z.radiance_amsua_n19.nc               | 0
+gdas.t12z.radiance_atms_n20.nc                | gdas.t12z.radiance_atms_n20.nc                | 777600
+gdas.t12z.radiance_atms_n21.nc                | gdas.t12z.radiance_atms_n21.nc                | 777594
+gdas.t12z.radiance_atms_npp.nc                | gdas.t12z.radiance_atms_npp.nc                | 0
+gdas.t12z.radiance_cris_fsr_n20.nc            | gdas.t12z.radiance_cris_fsr_n20.nc            | 729000
+gdas.t12z.radiance_cris_fsr_n21.nc            | gdas.t12z.radiance_cris_fsr_n21.nc            | 729000
+gdas.t12z.radiance_cris_fsr_npp.nc            | gdas.t12z.radiance_cris_fsr_npp.nc            | 0
+gdas.t12z.radiance_iasi_metop-a.nc            | gdas.t12z.radiance_iasi_metop-a.nc            | 0
+gdas.t12z.radiance_iasi_metop-b.nc            | gdas.t12z.radiance_iasi_metop-b.nc            | 318600
+gdas.t12z.radiance_iasi_metop-c.nc            | gdas.t12z.radiance_iasi_metop-c.nc            | 324000
+gdas.t12z.radiance_mhs_metop-a.nc             | gdas.t12z.radiance_mhs_metop-a.nc             | 0
+gdas.t12z.radiance_mhs_metop-b.nc             | gdas.t12z.radiance_mhs_metop-b.nc             | 1315736
+gdas.t12z.radiance_mhs_metop-c.nc             | gdas.t12z.radiance_mhs_metop-c.nc             | 1385820
+gdas.t12z.radiance_mhs_n18.nc                 | gdas.t12z.radiance_mhs_n18.nc                 | 0
+gdas.t12z.radiance_mhs_n19.nc                 | gdas.t12z.radiance_mhs_n19.nc                 | 0
+gdas.t12z.radiance_ssmis_f16.nc               | gdas.t12z.radiance_ssmis_f16.nc               | 0
+gdas.t12z.radiance_ssmis_f17.nc               | gdas.t12z.radiance_ssmis_f17.nc               | 459900
+gdas.t12z.radiance_ssmis_f18.nc               | gdas.t12z.radiance_ssmis_f18.nc               | 553320
+gdas.t12z.retrieval_amv_abi_goes-16.nc        | gdas.t12z.retrieval_amv_abi_goes-16.nc        | 0
+gdas.t12z.retrieval_amv_abi_goes-17.nc        | gdas.t12z.retrieval_amv_abi_goes-17.nc        | 0
+gdas.t12z.retrieval_amv_abi_goes-18.nc        | gdas.t12z.retrieval_amv_abi_goes-18.nc        | 544921
+gdas.t12z.retrieval_amv_abi_goes-19.nc        | gdas.t12z.retrieval_amv_abi_goes-19.nc        | 890718
+gdas.t12z.retrieval_amv_ahi_h8.nc             | gdas.t12z.retrieval_amv_ahi_h8.nc             | 0
+gdas.t12z.retrieval_amv_ahi_h9.nc             | gdas.t12z.retrieval_amv_ahi_h9.nc             | 105629
+gdas.t12z.retrieval_amv_avhrr_metop-a.nc      | gdas.t12z.retrieval_amv_avhrr_metop-a.nc      | 0
+gdas.t12z.retrieval_amv_avhrr_metop-b.nc      | gdas.t12z.retrieval_amv_avhrr_metop-b.nc      | 38928
+gdas.t12z.retrieval_amv_avhrr_metop-c.nc      | gdas.t12z.retrieval_amv_avhrr_metop-c.nc      | 31588
+gdas.t12z.retrieval_amv_avhrr_n15.nc          | gdas.t12z.retrieval_amv_avhrr_n15.nc          | 0
+gdas.t12z.retrieval_amv_avhrr_n18.nc          | gdas.t12z.retrieval_amv_avhrr_n18.nc          | 0
+gdas.t12z.retrieval_amv_avhrr_n19.nc          | gdas.t12z.retrieval_amv_avhrr_n19.nc          | 0
+gdas.t12z.retrieval_amv_modis_aqua.nc         | gdas.t12z.retrieval_amv_modis_aqua.nc         | 0
+gdas.t12z.retrieval_amv_modis_terra.nc        | gdas.t12z.retrieval_amv_modis_terra.nc        | 0
+gdas.t12z.retrieval_amv_seviri_m10.nc         | gdas.t12z.retrieval_amv_seviri_m10.nc         | 314364
+gdas.t12z.retrieval_amv_seviri_m11.nc         | gdas.t12z.retrieval_amv_seviri_m11.nc         | 0
+gdas.t12z.retrieval_amv_seviri_m8.nc          | gdas.t12z.retrieval_amv_seviri_m8.nc          | 0
+gdas.t12z.retrieval_amv_seviri_m9.nc          | gdas.t12z.retrieval_amv_seviri_m9.nc          | 296433
+gdas.t12z.retrieval_amv_viirs_n20.nc          | gdas.t12z.retrieval_amv_viirs_n20.nc          | 35800
+gdas.t12z.retrieval_amv_viirs_n21.nc          | gdas.t12z.retrieval_amv_viirs_n21.nc          | 39256
+gdas.t12z.retrieval_amv_viirs_npp.nc          | gdas.t12z.retrieval_amv_viirs_npp.nc          | 0
+gdas.t12z.retrieval_osw_ascat_metop-a.nc      | gdas.t12z.retrieval_osw_ascat_metop-a.nc      | 0
+gdas.t12z.retrieval_osw_ascat_metop-b.nc      | gdas.t12z.retrieval_osw_ascat_metop-b.nc      | 122543
+gdas.t12z.retrieval_osw_ascat_metop-c.nc      | gdas.t12z.retrieval_osw_ascat_metop-c.nc      | 113955
+gdas.t12z.retrieval_ozone_omi_aura.nc         | gdas.t12z.retrieval_ozone_omi_aura.nc         | 0
+gdas.t12z.retrieval_ozone_ompsnp_n20.nc       | gdas.t12z.retrieval_ozone_ompsnp_n20.nc       | 28749
+gdas.t12z.retrieval_ozone_ompsnp_n21.nc       | gdas.t12z.retrieval_ozone_ompsnp_n21.nc       | 37254
+gdas.t12z.retrieval_ozone_ompsnp_npp.nc       | gdas.t12z.retrieval_ozone_ompsnp_npp.nc       | 0
+gdas.t12z.retrieval_ozone_ompstc_n20.nc       | gdas.t12z.retrieval_ozone_ompstc_n20.nc       | 579074
+gdas.t12z.retrieval_ozone_ompstc_n21.nc       | gdas.t12z.retrieval_ozone_ompstc_n21.nc       | 1909554
+gdas.t12z.retrieval_ozone_ompstc_npp.nc       | gdas.t12z.retrieval_ozone_ompstc_npp.nc       | 0
+
+Directory: /lfs/h2/emc/da/noscrub/Hyundeok.Choi/obsForge_realtime/COMROOT/realtime/gdas.20260602/12/ocean/adt
+FILE NAME                                     | GENERATED FILE                                | N_OBS
+------------------------------------------------------------------------------------------------------------
+gdas.t12z.rads_adt_3a.nc                      | gdas.t12z.rads_adt_3a.nc                      | 27646
+gdas.t12z.rads_adt_3b.nc                      | gdas.t12z.rads_adt_3b.nc                      | 33902
+gdas.t12z.rads_adt_6a.nc                      | gdas.t12z.rads_adt_6a.nc                      | 105950
+gdas.t12z.rads_adt_c2.nc                      | gdas.t12z.rads_adt_c2.nc                      | 52702
+gdas.t12z.rads_adt_j2.nc                      |                                               | 0
+gdas.t12z.rads_adt_j3.nc                      | gdas.t12z.rads_adt_j3.nc                      | 106780
+gdas.t12z.rads_adt_sa.nc                      | gdas.t12z.rads_adt_sa.nc                      | 53109
+gdas.t12z.rads_adt_sw.nc                      | gdas.t12z.rads_adt_sw.nc                      | 88272
+
+Directory: /lfs/h2/emc/da/noscrub/Hyundeok.Choi/obsForge_realtime/COMROOT/realtime/gdas.20260602/12/ocean/icec
+FILE NAME                                     | GENERATED FILE                                | N_OBS
+------------------------------------------------------------------------------------------------------------
+gdas.t12z.icec_amsr2_north.nc                 | gdas.t12z.icec_amsr2_north.nc                 | 455460
+gdas.t12z.icec_amsr2_south.nc                 | gdas.t12z.icec_amsr2_south.nc                 | 623858
+gdas.t12z.icec_amsu_ma1_l2.nc                 | gdas.t12z.icec_amsu_ma1_l2.nc                 | 269900
+gdas.t12z.icec_atms_n20_l2.nc                 | gdas.t12z.icec_atms_n20_l2.nc                 | 271822
+gdas.t12z.icec_atms_n21_l2.nc                 | gdas.t12z.icec_atms_n21_l2.nc                 | 263076
+gdas.t12z.icec_atms_npp_l2.nc                 |                                               | 0
+gdas.t12z.icec_viirs_j01_l2.nc                | gdas.t12z.icec_viirs_j01_l2.nc                | 5864550
+gdas.t12z.icec_viirs_n21_l2.nc                | gdas.t12z.icec_viirs_n21_l2.nc                | 5160134
+gdas.t12z.icec_viirs_npp_l2.nc                |                                               | 0
+
+Directory: /lfs/h2/emc/da/noscrub/Hyundeok.Choi/obsForge_realtime/COMROOT/realtime/gdas.20260602/12/ocean/insitu
+FILE NAME                                     | GENERATED FILE                                | N_OBS
+------------------------------------------------------------------------------------------------------------
+gdas.t12z.insitu_salt_profile_argo.nc         | gdas.t12z.insitu_salt_profile_argo.nc         | 385923
+gdas.t12z.insitu_salt_profile_glider.nc       | gdas.t12z.insitu_salt_profile_glider.nc       | 4517
+gdas.t12z.insitu_salt_profile_pirata.nc       | gdas.t12z.insitu_salt_profile_pirata.nc       | 159
+gdas.t12z.insitu_salt_profile_rama.nc         | gdas.t12z.insitu_salt_profile_rama.nc         | 95
+gdas.t12z.insitu_salt_profile_taotriton.nc    | gdas.t12z.insitu_salt_profile_taotriton.nc    | 2427
+gdas.t12z.insitu_salt_profile_tesac.nc        | gdas.t12z.insitu_salt_profile_tesac.nc        | 2489
+gdas.t12z.insitu_salt_surface_trkob.nc        | gdas.t12z.insitu_salt_surface_trkob.nc        | 0
+gdas.t12z.insitu_temp_profile_argo.nc         | gdas.t12z.insitu_temp_profile_argo.nc         | 385923
+gdas.t12z.insitu_temp_profile_bathy.nc        | gdas.t12z.insitu_temp_profile_bathy.nc        | 14181
+gdas.t12z.insitu_temp_profile_glider.nc       | gdas.t12z.insitu_temp_profile_glider.nc       | 4517
+gdas.t12z.insitu_temp_profile_pirata.nc       | gdas.t12z.insitu_temp_profile_pirata.nc       | 318
+gdas.t12z.insitu_temp_profile_rama.nc         | gdas.t12z.insitu_temp_profile_rama.nc         | 203
+gdas.t12z.insitu_temp_profile_taotriton.nc    | gdas.t12z.insitu_temp_profile_taotriton.nc    | 15657
+gdas.t12z.insitu_temp_profile_tesac.nc        | gdas.t12z.insitu_temp_profile_tesac.nc        | 2489
+gdas.t12z.insitu_temp_surface_drifter.nc      | gdas.t12z.insitu_temp_surface_drifter.nc      | 7742
+gdas.t12z.insitu_temp_surface_ndbc.nc         | gdas.t12z.insitu_temp_surface_ndbc.nc         | 5721
+gdas.t12z.insitu_temp_surface_trkob.nc        | gdas.t12z.insitu_temp_surface_trkob.nc        | 0
+
+Directory: /lfs/h2/emc/da/noscrub/Hyundeok.Choi/obsForge_realtime/COMROOT/realtime/gdas.20260602/12/ocean/sss
+FILE NAME                                     | GENERATED FILE                                | N_OBS
+------------------------------------------------------------------------------------------------------------
+gdas.t12z.sss_smap_l2.nc                      |                                               | 0
+gdas.t12z.sss_smos_l2.nc                      | gdas.t12z.sss_smos_l2.nc                      | 36723
+
+Directory: /lfs/h2/emc/da/noscrub/Hyundeok.Choi/obsForge_realtime/COMROOT/realtime/gdas.20260602/12/ocean/sst
+FILE NAME                                     | GENERATED FILE                                | N_OBS
+------------------------------------------------------------------------------------------------------------
+gdas.t12z.sst_avhrrf_ma_l3u.nc                |                                               | 0
+gdas.t12z.sst_avhrrf_mb_l3u.nc                | gdas.t12z.sst_avhrrf_mb_l3u.nc                | 99847
+gdas.t12z.sst_avhrrf_mc_l3u.nc                | gdas.t12z.sst_avhrrf_mc_l3u.nc                | 103177
+gdas.t12z.sst_viirs_n20_l3u.nc                | gdas.t12z.sst_viirs_n20_l3u.nc                | 129217
+gdas.t12z.sst_viirs_n21_l3u.nc                | gdas.t12z.sst_viirs_n21_l3u.nc                | 122115
+gdas.t12z.sst_viirs_npp_l3u.nc                |                                               | 0
+gdas.t12z.sst_ahi_h08_l3c.nc                  |                                               | 0
+gdas.t12z.sst_abi_g16_l3c.nc                  |                                               | 0
+gdas.t12z.sst_abi_g17_l3c.nc                  |                                               | 0
+gdas.t12z.sst_abi_g18_13c.nc                  |                                               | 0
+
+Directory: /lfs/h2/emc/da/noscrub/Hyundeok.Choi/obsForge_realtime/COMROOT/realtime/gcdas.20260602/12/chem
+FILE NAME                                     | GENERATED FILE                                | N_OBS
+------------------------------------------------------------------------------------------------------------
+gcdas.t12z.retrieval_aod_viirs_n20.nc         | gcdas.t12z.retrieval_aod_viirs_n20.nc         | 86768
+gcdas.t12z.retrieval_aod_viirs_n21.nc         | gcdas.t12z.retrieval_aod_viirs_n21.nc         | 86402
+gcdas.t12z.retrieval_aod_viirs_npp.nc         |                                               | 0
+

@@ -1,0 +1,8 @@
+rads_adt_3a.nc
+rads_adt_3b.nc
+rads_adt_6a.nc
+rads_adt_c2.nc
+rads_adt_j2.nc
+rads_adt_j3.nc
+rads_adt_sa.nc
+rads_adt_sw.nc

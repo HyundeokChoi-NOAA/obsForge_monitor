@@ -1,0 +1,3 @@
+retrieval_aod_viirs_n20.nc
+retrieval_aod_viirs_n21.nc
+retrieval_aod_viirs_npp.nc

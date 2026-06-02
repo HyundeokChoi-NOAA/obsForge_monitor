@@ -1,0 +1,10 @@
+sst_avhrrf_ma_l3u.nc
+sst_avhrrf_mb_l3u.nc
+sst_avhrrf_mc_l3u.nc
+sst_viirs_n20_l3u.nc
+sst_viirs_n21_l3u.nc
+sst_viirs_npp_l3u.nc
+sst_ahi_h08_l3c.nc
+sst_abi_g16_l3c.nc
+sst_abi_g17_l3c.nc
+sst_abi_g18_13c.nc

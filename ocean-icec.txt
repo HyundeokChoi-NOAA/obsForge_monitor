@@ -1,0 +1,9 @@
+icec_amsr2_north.nc
+icec_amsr2_south.nc
+icec_amsu_ma1_l2.nc
+icec_atms_n20_l2.nc
+icec_atms_n21_l2.nc
+icec_atms_npp_l2.nc
+icec_viirs_j01_l2.nc
+icec_viirs_n21_l2.nc
+icec_viirs_npp_l2.nc
