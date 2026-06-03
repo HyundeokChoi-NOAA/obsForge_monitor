@@ -1,6 +1,6 @@
 #!/bin/bash
 ###############################################################################
-# Unified realtime monitor + cycle detector + gfs/gdas/gcdas runner
+# Unified realtime monitor + cycle detector + gfs/gdas runner
 # - Detects which cycle just completed by comparing snapshots
 # - Runs only the correct workflow:
 #       gfs  → realtime_gfs4.bash <cycle>
@@ -79,7 +79,7 @@ state="$(printf "%s" "$state")"
 if [ ! -f "$SNAPSHOT" ]; then
     echo "$state" > "$SNAPSHOT"
 
-    echo "$state" | mailx -s "Realtime initial status" hyundeok.choi@noaa.gov
+    echo "$state" | mailx -s "ObsForge real-time initial status" hyundeok.choi@noaa.gov
 
     LOGFILE="${STATUS_LOGDIR}/status_dir_${TODAY}_${TIME}.log"
     {
@@ -97,7 +97,7 @@ fi
 previous="$(cat "$SNAPSHOT")"
 
 if [ "$state" != "$previous" ]; then
-    echo -e "ObsForge real time status changed at $TIMESTAMP\n\n$state" \
+    echo -e "ObsForge real-time status changed at $TIMESTAMP\n\n$state" \
         | mailx -s "ObsForge real time status changed" hyundeok.choi@noaa.gov
 
     LOGFILE="${STATUS_LOGDIR}/status_dir_${TODAY}_${TIME}.log"
@@ -145,8 +145,8 @@ for prod in gfs gdas gcdas; do
 
         for c in "${curr_arr[@]}"; do
             if [[ ! " ${prev_arr[*]} " =~ " $c " ]]; then
-                completed_cycles["$prod"]="$c"
-                completed_base["$prod"]="$base"
+                completed_cycles["$prod|$base"]="$c"
+#                completed_base["$prod"]="$base"
             fi
         done
 
@@ -154,45 +154,39 @@ for prod in gfs gdas gcdas; do
 done
 
 ###############################################################################
-# PART 6 — RUN ONLY THE WORKFLOWS THAT COMPLETED A NEW CYCLE
+# PART 6 — RUN WORKFLOWS FOR EACH BASE THAT COMPLETED A NEW CYCLE
 ###############################################################################
 
-# -------------------------
-# GFS completed a cycle
-# -------------------------
-if [[ -n "${completed_cycles[gfs]}" ]]; then
-    cycle="${completed_cycles[gfs]}"
-    base="${completed_base[gfs]}"
+for key in "${!completed_cycles[@]}"; do
+    prod="${key%%|*}"
+    base="${key##*|}"
+    cycle="${completed_cycles[$key]}"
 
-    echo "Detected GFS cycle $cycle completed at base: $base"
+    echo "Detected $prod cycle $cycle completed at base: $base"
 
-    "$currentDir/realtime_gfs.bash" "$cycle" "$base"
+    case "$prod" in
 
-    gfs_log="${LOGDIR_RUN}/gfs_${TODAY}_${cycle}.log"
-    [ -f "$gfs_log" ] && cat "$gfs_log" | \
-        mailx -s "gfs ${TODAY} ${cycle}" hyundeok.choi@noaa.gov
-fi
+        gfs)
+            "$currentDir/realtime_gfs.bash" "$cycle" "$base"
+            gfs_log="${LOGDIR_RUN}/gfs_${TODAY}_${cycle}.log"
+            [ -f "$gfs_log" ] && cat "$gfs_log" | \
+                mailx -s "gfs ${TODAY} ${cycle} ($base)" hyundeok.choi@noaa.gov
+            ;;
 
-# -------------------------
-# GDAS completed a cycle
-# -------------------------
-if [[ -n "${completed_cycles[gdas]}" ]]; then
-    cycle="${completed_cycles[gdas]}"
-    base="${completed_base[gdas]}"
+        gdas)
+            "$currentDir/realtime_gdas.bash" "$cycle" "$base"
+            "$currentDir/realtime_gcdas.bash" "$cycle" "$base"
 
-    echo "Detected GDAS cycle $cycle completed at base: $base"
+            if [[ "$cycle" == "18" ]]; then
+                gdas_date=$(date -d "yesterday" +%Y%m%d)
+            else
+                gdas_date="$TODAY"
+            fi
 
-    "$currentDir/realtime_gdas.bash" "$cycle" "$base"
+            gdas_log="${LOGDIR_RUN}/gdas_${gdas_date}_${cycle}.log"
+            [ -f "$gdas_log" ] && cat "$gdas_log" | \
+                mailx -s "gdas ${gdas_date} ${cycle} ($base)" hyundeok.choi@noaa.gov
+            ;;
 
-    # GDAS 18Z uses yesterday's date
-    if [[ "$cycle" == "18" ]]; then
-        gdas_date=$(date -d "yesterday" +%Y%m%d)
-    else
-        gdas_date="$TODAY"
-    fi
-
-    gdas_log="${LOGDIR_RUN}/gdas_${gdas_date}_${cycle}.log"
-    [ -f "$gdas_log" ] && cat "$gdas_log" | \
-        mailx -s "gdas ${gdas_date} ${cycle}" hyundeok.choi@noaa.gov
-
-fi
+    esac
+done
