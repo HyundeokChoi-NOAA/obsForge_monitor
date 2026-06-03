@@ -114,24 +114,26 @@ fi
 ###############################################################################
 
 declare -A completed_cycles
-declare -A completed_base
+#declare -A completed_base
 
 for prod in gfs gdas gcdas; do
     for base in "${bases[@]}"; do
 
+        # Determine which date blocks to match
+        if [[ "$prod" == "gdas" || "$prod" == "gcdas" ]]; then
+            today_date=$(date +%Y%m%d)
+            yday_date=$(date -d "yesterday" +%Y%m%d)
+            date_pattern="(${today_date}|${yday_date})"
+        else
+            date_pattern="$(date +%Y%m%d)"
+        fi
+
         # Extract previous present cycles for this base + product
         prev_present=$(echo "$previous" | \
-            awk -v b="$base" -v p="${prod}.${TODAY}" '
-                # When we hit the base header, start a block
+                awk -v b="$base" -v p="${prod}." -v dp="$date_pattern" ' 
                 $0 == b {inblock=1; next}
-
-                # When we hit the next base header, stop the block
                 inblock && $0 ~ "^/lfs" {inblock=0}
-
-                # Inside the block, when we hit the product header, mark it
-                inblock && $0 ~ p {found=1}
-
-                # Inside the block, after product header, capture present=
+                inblock && $0 ~ p && $0 ~ dp {found=1}
                 inblock && found && $1 ~ /^present=/ {
                     print substr($0,9)
                     found=0
@@ -170,7 +172,7 @@ for key in "${!completed_cycles[@]}"; do
             "$currentDir/realtime_gfs.bash" "$cycle" "$base"
             gfs_log="${LOGDIR_RUN}/gfs_${TODAY}_${cycle}.log"
             [ -f "$gfs_log" ] && cat "$gfs_log" | \
-                mailx -s "gfs ${TODAY} ${cycle} ($base)" hyundeok.choi@noaa.gov
+                mailx -s "ObsForge GFS ${TODAY} ${cycle} ($base)" hyundeok.choi@noaa.gov
             ;;
 
         gdas)
